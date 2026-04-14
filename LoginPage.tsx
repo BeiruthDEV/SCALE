@@ -3,18 +3,52 @@ import { useState, FormEvent } from "react";
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
 
+  /* ── NOVO BACKGROUND: AMBIENTE DE GINÁSIO HARDCORE ── */
+  .il-page-bg {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+    
+    /* Cor base super escura */
+    background-color: #050505;
+    background-image: 
+      /* 1. Vinheta escura e pesada nas bordas para focar a atenção no centro */
+      radial-gradient(ellipse at center, rgba(5,5,5,0.2) 0%, #050505 100%),
+      /* 2. Filtro laranja sutil da marca IronLog cruzando a tela */
+      linear-gradient(135deg, rgba(255, 90, 40, 0.15) 0%, rgba(5, 5, 5, 0.8) 100%),
+      /* 3. Imagem real de anilhas/ferro (Unsplash livre de direitos) */
+      url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Essa propriedade mistura as cores do gradiente com a foto para não ficar estourada */
+    background-blend-mode: multiply, normal, normal;
+  }
+
+  /* Atualize a classe .il-root para o efeito de vidro */
   .il-root {
     width: 100%;
     max-width: 900px;
     min-height: 600px;
-    background: #0d0d0f;
+    /* Fundo semi-transparente para o Glassmorphism */
+    background: rgba(13, 13, 15, 0.65); 
+    /* Desfoque do fundo que passa por trás do card */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     display: flex;
     color: #f0ede8;
     position: relative;
     overflow: hidden;
     border-radius: 16px;
-    border: 0.5px solid #1e1e24;
-    font-family: 'DM Sans', sans-serif;
+    /* Borda ligeiramente mais clara e translúcida para realçar o efeito de vidro */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.02);
   }
 
   .il-bg-texture {
@@ -112,8 +146,9 @@ const styles = `
   .il-right {
     width: 380px;
     min-width: 320px;
-    background: #131316;
-    border-left: 0.5px solid #1e1e24;
+    /* Fundo ligeiramente transparente em vez de sólido */
+    background: rgba(19, 19, 22, 0.5);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -353,6 +388,8 @@ const styles = `
   @media (max-width: 640px) {
     .il-left  { display: none; }
     .il-right { width: 100%; border: none; }
+    .il-page-bg { padding: 0; background-image: none; background-color: #0d0d0f; }
+    .il-root { border-radius: 0; border: none; box-shadow: none; background: #0d0d0f; backdrop-filter: none; -webkit-backdrop-filter: none; }
   }
 `;
 
@@ -403,17 +440,18 @@ export default function LoginPage() {
       return;
     }
     setLoading(true);
-    // Simula chamada de API — substitua pela sua lógica real
+    // Simula chamada de API
     await new Promise(res => setTimeout(res, 1500));
     setLoading(false);
     setSuccess(true);
-    // Redirecione o usuário aqui, ex: router.push('/dashboard')
   };
 
   return (
     <>
       <style>{styles}</style>
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#0d0d0f", padding: "24px" }}>
+      
+      {/* ── BACKGROUND WRAPPER ── */}
+      <div className="il-page-bg">
         <div className="il-root">
           <div className="il-bg-texture" />
 
