@@ -1,0 +1,50 @@
+from pydantic import BaseModel, EmailStr, field_validator
+from datetime import datetime
+from uuid import UUID
+
+
+# ── Auth ──────────────────────────────────────────────
+class RegisterRequest(BaseModel):
+    name: str
+    email: EmailStr
+    password: str
+
+    @field_validator("password")
+    @classmethod
+    def password_min_length(cls, v: str) -> str:
+        if len(v) < 6:
+            raise ValueError("Senha deve ter no mínimo 6 caracteres")
+        return v
+
+    @field_validator("name")
+    @classmethod
+    def name_not_empty(cls, v: str) -> str:
+        if not v.strip():
+            raise ValueError("Nome não pode ser vazio")
+        return v.strip()
+
+
+class LoginRequest(BaseModel):
+    email: EmailStr
+    password: str
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    refresh_token: str
+    token_type: str = "bearer"
+
+
+class RefreshRequest(BaseModel):
+    refresh_token: str
+
+
+# ── User ──────────────────────────────────────────────
+class UserResponse(BaseModel):
+    id: UUID
+    name: str
+    email: str
+    is_active: bool
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
