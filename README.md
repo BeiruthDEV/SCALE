@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/BeiruthDEV/SCALE/main/public/scale-logo-v2.png" alt="SCALE Logo" width="100"/>
+  <img src="https://raw.githubusercontent.com/BeiruthDEV/SCALE/main/public/scale-logo-v3.png" alt="SCALE Logo" width="100"/>
 
   # SCALE: Trust your Instinct, Defy your Limits
 
