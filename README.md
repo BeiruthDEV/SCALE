@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/BeiruthDEV/IronLog/main/public/vite.svg" alt="IronLog Logo" width="100"/>
+  <img src="https://raw.githubusercontent.com/BeiruthDEV/IronLog/main/public/vite.svg" alt="SCALE Logo" width="100"/>
 
-  # IronLog: Siga seu Instinto, Domine o Aço
+  # SCALE: Siga seu Instinto, Domine o Aço
 
   [![React](https://img.shields.io/badge/React-19.0.0-blue.svg?style=flat&logo=react)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF.svg?style=flat&logo=vite)](https://vitejs.dev/)
@@ -13,7 +13,7 @@
 
 ## 📌 Descrição Breve
 
-**IronLog** é uma landing page cinemática e de alta fidelidade visual, construída para promover o aplicativo de rastreamento de treinos de mesmo nome. O projeto utiliza uma estética "Brutalist Fitness" (Dark Void + Flame Orange), enfatizando telemetria, densidade de informações e micro-interações de ponta para atrair atletas e entusiastas que buscam sobrecarga progressiva estruturada.
+**SCALE** é uma landing page cinemática e de alta fidelidade visual, construída para promover o aplicativo de rastreamento de treinos de mesmo nome. O projeto utiliza uma estética "Brutalist Fitness" (Dark Void + Flame Orange), enfatizando telemetria, densidade de informações e micro-interações de ponta para atrair atletas e entusiastas que buscam sobrecarga progressiva estruturada.
 
 ## 🚀 Características Principais
 

@@ -244,7 +244,7 @@ function ProtocolCard({ number, title, desc, tags, status, children }) {
           
           {/* Header Bar (Mock App Header) */}
           <div className="w-full h-12 bg-[#141414] border-b border-white/5 flex items-center justify-between px-5 z-20">
-             <div className="font-sans text-[12px] font-bold tracking-widest text-textMain">IRONLOG</div>
+             <div className="font-sans text-[12px] font-bold tracking-widest text-textMain">SCALE</div>
              <div className="flex gap-2">
                <div className="w-1 h-3 rounded-full bg-accent/40 animate-pulse"></div>
                <div className="w-1 h-3 rounded-full bg-accent/70 animate-pulse delay-75"></div>

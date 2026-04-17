@@ -27,7 +27,7 @@ export default function Navbar() {
         }`}
       >
         <span className="font-sans font-bold text-xl tracking-tighter text-textMain uppercase">
-          IronLog<span className="text-accent">.</span>
+          SCALE<span className="text-accent">.</span>
         </span>
         
         <div className="hidden md:flex gap-8">

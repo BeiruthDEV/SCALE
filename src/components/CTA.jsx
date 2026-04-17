@@ -8,7 +8,7 @@ export default function CTA() {
           Comece agora.
         </h2>
         <p className="font-sans text-textDark text-xl md:text-2xl max-w-2xl mt-4">
-          O código é aberto. Seus resultados não são. O IronLog está disponível no GitHub para lifters e engenheiros.
+          O código é aberto. Seus resultados não são. O SCALE está disponível no GitHub para lifters e engenheiros.
         </p>
 
         <a 
