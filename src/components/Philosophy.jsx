@@ -45,10 +45,10 @@ export default function Philosophy() {
 
       <div className="relative z-10 max-w-5xl w-full flex flex-col gap-12 text-center">
         <p className="phil-text font-sans text-xl md:text-3xl text-textDark/60 font-medium tracking-tight">
-          A maioria dos apps foca em: <span className="text-textDark">anotações desorganizadas.</span>
+          Most apps focus on: <span className="text-textDark">disorganized notes.</span>
         </p>
         <h2 className="phil-text font-drama italic text-4xl md:text-7xl text-textMain leading-tight">
-          Nós focamos em: <span className="text-accent not-italic font-sans font-bold uppercase tracking-tighter block mt-4">Controle Absoluto.</span>
+          We focus on: <span className="text-accent not-italic font-sans font-bold uppercase tracking-tighter block mt-4">Absolute Control.</span>
         </h2>
       </div>
     </section>

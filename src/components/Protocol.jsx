@@ -34,9 +34,9 @@ export default function Protocol() {
 
       <ProtocolCard 
         number="01" 
-        title="TRACKING BRUTALISTA" 
-        desc="Registre seus treinos de forma ágil. Cada série, repetição e carga fica armazenada no banco de dados da sua evolução."
-        tags={["Cargas", "Séries", "Repetições"]}
+        title="BRUTALIST TRACKING" 
+        desc="Log your workouts fast. Every set, rep, and weight is stored in your evolution database."
+        tags={["Weight", "Sets", "Reps"]}
         status="ACTIVE"
       >
         <div className="w-full h-full flex flex-col relative opacity-100 p-4 font-sans justify-center mt-4">
@@ -45,8 +45,8 @@ export default function Protocol() {
             
             <div className="flex justify-between items-center mb-4 pl-2">
                <div>
-                 <span className="font-bold text-textMain text-sm block">Supino Reto</span>
-                 <span className="text-[10px] text-textDark/60 font-mono">Peitoral • Barra</span>
+                 <span className="font-bold text-textMain text-sm block">Bench Press</span>
+                 <span className="text-[10px] text-textDark/60 font-mono">Chest • Barbell</span>
                </div>
                <span className="text-[10px] font-mono text-accent animate-pulse bg-accent/10 px-2 py-1 rounded">Rest: 00:45</span>
             </div>
@@ -92,9 +92,9 @@ export default function Protocol() {
 
       <ProtocolCard 
         number="02" 
-        title="DIETA SINTÉTICA" 
-        desc="Não apenas levante peso. Domine sua janela metabólica com monitoramento preciso de macros e calorias diárias."
-        tags={["Proteínas", "Carboidratos", "Gorduras"]}
+        title="SYNTHETIC DIET" 
+        desc="Don't just lift weights. Master your metabolic window with precise macro and calorie tracking."
+        tags={["Protein", "Carbs", "Fats"]}
         status="SYNC"
       >
         <div className="w-full h-full flex flex-col relative opacity-100 p-4 justify-center">
@@ -102,20 +102,20 @@ export default function Protocol() {
           <div className="w-full bg-[#111] rounded-xl border border-white/10 p-5 shadow-2xl relative">
             <div className="flex justify-between items-end mb-6 border-b border-white/5 pb-4">
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] text-textDark/60 font-mono tracking-widest">CALORIAS CONSUMIDAS</span>
+                <span className="text-[10px] text-textDark/60 font-mono tracking-widest">CALORIES INTAKE</span>
                 <span className="text-4xl font-bold text-textMain font-mono leading-none tracking-tighter">1,750</span>
               </div>
               <div className="flex flex-col items-end gap-1">
-                 <span className="text-[10px] text-textDark/60 font-mono tracking-widest">META DIÁRIA</span>
+                 <span className="text-[10px] text-textDark/60 font-mono tracking-widest">DAILY GOAL</span>
                  <span className="text-sm font-bold text-accent font-mono">3,200</span>
               </div>
             </div>
 
             <div className="flex flex-col gap-4">
               {[
-                { label: 'PROTEÍNAS', current: '120g', max: '200g', pct: 60, color: 'bg-[#F97316]' },
-                { label: 'CARBOIDRATOS', current: '180g', max: '400g', pct: 45, color: 'bg-[#E8E4DD]' },
-                { label: 'GORDURAS', current: '40g', max: '90g', pct: 44, color: 'bg-[#555]' },
+                { label: 'PROTEIN', current: '120g', max: '200g', pct: 60, color: 'bg-[#F97316]' },
+                { label: 'CARBS', current: '180g', max: '400g', pct: 45, color: 'bg-[#E8E4DD]' },
+                { label: 'FATS', current: '40g', max: '90g', pct: 44, color: 'bg-[#555]' },
               ].map(m => (
                 <div key={m.label} className="flex flex-col gap-1.5">
                   <div className="flex justify-between text-[11px] font-mono font-bold tracking-wider">
@@ -131,10 +131,10 @@ export default function Protocol() {
             
             <div className="mt-6 flex gap-2">
                <button className="flex-1 bg-white/5 hover:bg-white/10 text-white text-xs font-bold py-2 rounded font-sans transition-colors">
-                 Café da Manhã
+                 Breakfast
                </button>
                <button className="flex-1 bg-white/5 hover:bg-white/10 text-white text-xs font-bold py-2 rounded font-sans transition-colors">
-                 Almoço
+                 Lunch
                </button>
             </div>
           </div>
@@ -143,16 +143,16 @@ export default function Protocol() {
 
       <ProtocolCard 
         number="03" 
-        title="EVOLUÇÃO INEVITÁVEL" 
-        desc="Acompanhe recordes pessoais e sobrecarga progressiva através de telemetria implacável."
-        tags={["1RM", "Tonelagem", "Frequência"]}
+        title="INEVITABLE EVOLUTION" 
+        desc="Track personal records and progressive overload through relentless telemetry."
+        tags={["1RM", "Tonnage", "Frequency"]}
         status="OPTIMIZED"
       >
         <div className="w-full h-full flex flex-col justify-center relative opacity-100 p-4">
 
           <div className="w-full bg-[#111] rounded-xl border border-white/10 p-5 shadow-2xl relative">
              <div className="flex justify-between items-center mb-6">
-               <span className="text-xs text-textMain font-bold uppercase tracking-wider font-sans">Evolução: Supino Reto (1RM)</span>
+               <span className="text-xs text-textMain font-bold uppercase tracking-wider font-sans">Evolution: Bench Press (1RM)</span>
                <div className="flex gap-1">
                  <span className="text-[10px] bg-[#1a1a1a] border border-white/5 px-2 py-0.5 rounded text-textDark/60 font-mono">1M</span>
                  <span className="text-[10px] bg-accent/20 border border-accent/30 text-accent font-bold px-2 py-0.5 rounded font-mono">6M</span>
@@ -187,12 +187,12 @@ export default function Protocol() {
              
              <div className="grid grid-cols-3 gap-3 mt-4">
                 <div className="bg-[#1a1a1a] border border-white/5 rounded-lg p-2 text-center flex flex-col">
-                   <span className="text-[9px] text-textDark/60 font-mono tracking-widest mb-0.5">ATUAL</span>
+                   <span className="text-[9px] text-textDark/60 font-mono tracking-widest mb-0.5">CURRENT</span>
                    <span className="text-sm font-bold text-textMain font-mono">110kg</span>
                 </div>
                 <div className="bg-accent/10 border border-accent/20 rounded-lg p-2 text-center flex flex-col relative overflow-hidden">
                    <div className="absolute top-0 left-0 w-full h-[2px] bg-accent"></div>
-                   <span className="text-[9px] text-accent font-mono tracking-widest mb-0.5">ESTIMADO</span>
+                   <span className="text-[9px] text-accent font-mono tracking-widest mb-0.5">ESTIMATED</span>
                    <span className="text-sm font-bold text-accent font-mono">115kg</span>
                 </div>
                 <div className="bg-[#1a1a1a] border border-white/5 rounded-lg p-2 text-center flex flex-col">

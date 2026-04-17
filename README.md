@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/BeiruthDEV/SCALE/main/public/vite.svg" alt="SCALE Logo" width="100"/>
 
-  # SCALE: Siga seu Instinto, Domine o Aço
+  # SCALE: Trust your Instinct, Defy your Limits
 
   [![React](https://img.shields.io/badge/React-19.0.0-blue.svg?style=flat&logo=react)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF.svg?style=flat&logo=vite)](https://vitejs.dev/)
@@ -11,107 +11,107 @@
 
 </div>
 
-## 📌 Descrição Breve
+## 📌 Brief Description
 
-**SCALE** é uma landing page cinemática e de alta fidelidade visual, construída para promover o aplicativo de rastreamento de treinos de mesmo nome. O projeto utiliza uma estética "Brutalist Fitness" (Dark Void + Flame Orange), enfatizando telemetria, densidade de informações e micro-interações de ponta para atrair atletas e entusiastas que buscam sobrecarga progressiva estruturada.
+**SCALE** is a high-fidelity cinematic landing page built to promote the workout tracking application of the same name. The project utilizes a "Brutalist Fitness" (Dark Void + Flame Orange) aesthetic, emphasizing telemetry, information density, and cutting-edge micro-interactions to attract athletes and enthusiasts seeking structured progressive overload.
 
-## 🚀 Características Principais
+## 🚀 Key Features
 
-*   **Design System Editorial Brutalista:** Tema escuro denso com paleta acentuada em laranja (`#F97316`), tipografia em caixa alta e interface de navegação com bordas translúcidas.
-*   **Animações Assíncronas (GSAP):** Animações complexas ativadas por rolagem (`ScrollTrigger`), efeitos de opacidade de entrada escalonados e interações magnéticas.
-*   **Protocolos de UI Mockados:** Componentes que imitam a interface final do aplicativo visualmente através do *Sticky Stacking* garantindo profundidade.
-*   **Textura e Ruído Global:** Implementação de ruído SVG nativo e gradientes lineares tipo malha-de-grade para replicar painéis de rastreamento industrial.
-*   **Desempenho Otimizado (Vite + React):** Empacotador web rápido que entrega o site renderizado em frações de segundos.
+*   **Brutalist Editorial Design System:** Dense dark theme with flame orange (`#F97316`) accent palette, uppercase typography, and a navigation interface with translucent borders.
+*   **Asynchronous Animations (GSAP):** Complex scroll-triggered animations (`ScrollTrigger`), staggered entry opacity effects, and magnetic interactions.
+*   **Mocked UI Protocols:** Components that visually mimic the final application interface through *Sticky Stacking* to ensure depth.
+*   **Global Texture and Noise:** Implementation of native SVG noise and linear grid-like gradients to replicate industrial tracking panels.
+*   **Optimized Performance (Vite + React):** Fast web bundler that delivers the site rendered in fractions of a second.
 
-## ⚙️ Pré-requisitos e Instalação
+## ⚙️ Prerequisites and Installation
 
-Siga as instruções abaixo para executar o projeto em sua máquina local para ambiente de desenvolvimento e testes.
+Follow the instructions below to run the project on your local machine for development and testing.
 
-### Dependências Iniciais
-Certifique-se de ter o [Node.js](https://nodejs.org/) instalado no seu sistema.
+### Initial Dependencies
+Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 
-### Instalação
+### Installation
 
-1. Clone o repositório
+1. Clone the repository
    ```bash
    git clone https://github.com/BeiruthDEV/SCALE.git
    ```
-2. Entre no diretório do projeto
+2. Enter the project directory
    ```bash
-   cd IronLog
+   cd SCALE
    ```
-3. Instale as dependências via NPM
+3. Install dependencies via NPM
    ```bash
    npm install
    ```
 
-## 💻 Como Usar
+## 💻 How to Use
 
-Para iniciar o servidor de desenvolvimento e visualizar o site interativo no seu navegador em tempo real:
+To start the development server and view the interactive site in your browser in real-time:
 
 ```bash
-# Inicia o servidor Vite na porta 5173
+# Starts the Vite server on port 5173
 npm run dev
 ```
 
-Abra o navegador no endereço `http://localhost:5173`. Quaisquer alterações no código fonte (`.jsx` ou `.css`) refletirão na tela automaticamente (*Hot Module Replacement*).
+Open your browser at `http://localhost:5173`. Any changes to the source code (`.jsx` or `.css`) will automatically reflect on the screen (*Hot Module Replacement*).
 
-Para construir o código para a versão em produção:
+To build the project for production:
 
 ```bash
-# Empacota e minifica os arquivos na pasta /dist
+# Bundles and minifies files into the /dist folder
 npm run build
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
-Abaixo uma visão geral da principal organização do código-fonte:
+Below is an overview of the main source code organization:
 
 ```text
-IronLog/
-├── public/                 # Assets públicos e meta-flags
+SCALE/
+├── public/                 # Public assets and meta-flags
 ├── src/
-│   ├── components/         # Blocos visuais modulares da aplicação
-│   │   ├── Features.jsx    # "Diferenciais do App", interações micro-UI
-│   │   ├── Footer.jsx      # Rodapé operativo de call-to-action
-│   │   ├── Header.jsx      # Navigation Bar com efeito Blur/Magnetic
-│   │   ├── Hero.jsx        # Capa Cinemática principal
+│   ├── components/         # Modular visual blocks of the application
+│   │   ├── Features.jsx    # "App Features", micro-UI interactions
+│   │   ├── Footer.jsx      # Call-to-action operative footer
+│   │   ├── Header.jsx      # Navigation Bar with Blur/Magnetic effects
+│   │   ├── Hero.jsx        # Main Cinematic Cover
 │   │   ├── Philosophy.jsx  # Parallax Manifesto
-│   │   └── Protocol.jsx    # Telas de UI com GSAP Sticky Stacking
-│   ├── App.jsx             # Estrutura principal e montagem dos componentes
-│   ├── index.css           # Estilos globais Tailwind e custom frames
-│   └── main.jsx            # Entry point central React -> DOM
-├── package.json            # Scripts de CLI e Registro de dependências
-├── tailwind.config.js      # Integrações da paleta e tokens CSS 
-└── vite.config.js          # Configurações de compilação da ferramenta Vite
+│   │   └── Protocol.jsx    # UI Screens with GSAP Sticky Stacking
+│   ├── App.jsx             # Main structure and component mounting
+│   ├── index.css           # Global Tailwind styles and custom frames
+│   └── main.jsx            # Central React entry point -> DOM
+├── package.json            # CLI Scripts and dependency registry
+├── tailwind.config.js      # Palette integrations and CSS tokens
+└── vite.config.js          # Vite build tool configurations
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Built With
 
-A base do aplicativo e da interface utiliza a seguinte *Stack* técnica:
+The foundation of the application and interface uses the following technical stack:
 
-*   **[React 19](https://react.dev/):** Biblioteca para interfaces dinâmicas em Componentes.
-*   **[Vite](https://vitejs.dev/):** Ferramenta de build web veloz otimizada de próxima geração.
-*   **[Tailwind CSS v4](https://tailwindcss.com/):** Framework CSS utility-first para prototipagem relâmpago.
-*   **[GSAP](https://gsap.com/):** O padrão da indústria para animações e manipulações visuais em JavaScript.
-*   **[Lucide React](https://lucide.dev/):** Biblioteca vetorial moderna para iconografia limpa.
+*   **[React 19](https://react.dev/):** Library for dynamic component-based interfaces.
+*   **[Vite](https://vitejs.dev/):** Next-generation optimizing fast web build tool.
+*   **[Tailwind CSS v4](https://tailwindcss.com/):** Utility-first CSS framework for lightning-fast prototyping.
+*   **[GSAP](https://gsap.com/):** The industry standard for animations and visual manipulations in JavaScript.
+*   **[Lucide React](https://lucide.dev/):** Modern vector library for clean iconography.
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Contribuições tornam a comunidade open source um lugar incrível de evolução técnica. Toda sugestão estrutural e relatórios de bugs são bem-vindos!
+Contributions make the open-source community an amazing place for technical evolution. Any structural suggestions and bug reports are welcome!
 
-1. Faça o Fork do Projeto
-2. Crie uma Branch para a sua nova feature (`git checkout -b feature/IncrivelNovaFeature`)
-3. Adicione o seu código e faça os respectivos commits (`git commit -m 'Add: Uma Nova Funcionalidade Incrível'`)
-4. Faça o push para a branch gerada localmente (`git push origin feature/IncrivelNovaFeature`)
-5. Abra um Pull Request e descreva as alterações.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingNewFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingNewFeature`)
+5. Open a Pull Request
 
-## 📝 Licença
+## 📝 License
 
-Distribuído sob a licença MIT. Veja a raiz do arquivo `LICENSE` para maiores e mais detalhadas informações.
+Distributed under the MIT License. See the `LICENSE` file in the root for more detailed information.
 
-## ✉️ Autor / Contato
+## ✉️ Author / Contact
 
 **BeiruthDEV** - [GitHub Profile](https://github.com/BeiruthDEV)
 
-Link do Projeto Repositório: [https://github.com/BeiruthDEV/SCALE](https://github.com/BeiruthDEV/SCALE)
+Project Repository Link: [https://github.com/BeiruthDEV/SCALE](https://github.com/BeiruthDEV/SCALE)

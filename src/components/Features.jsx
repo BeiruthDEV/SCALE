@@ -25,8 +25,8 @@ export default function Features() {
   return (
     <section id="features" ref={container} className="relative z-10 w-full py-32 px-6 md:px-12 bg-background flex flex-col gap-16">
       <div className="text-center md:text-left md:px-12">
-        <p className="font-mono text-accent text-sm uppercase tracking-widest mb-4">Artefatos Analíticos</p>
-        <h2 className="font-sans font-bold text-4xl md:text-6xl text-textMain max-w-2xl">O Fim das Planilhas de Treino.</h2>
+        <p className="font-mono text-accent text-sm uppercase tracking-widest mb-4">Analytical Artifacts</p>
+        <h2 className="font-sans font-bold text-4xl md:text-6xl text-textMain max-w-2xl">The End of Workout Spreadsheets.</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,9 +40,9 @@ export default function Features() {
 
 function DiagnosticShuffler() {
   const [cards, setCards] = useState([
-    { id: 1, data: "Supino Reto • 4x8 • 100kg" },
-    { id: 2, data: "Agachamento Livre • 5x5 • 140kg" },
-    { id: 3, data: "Terra • 3x5 • 160kg" }
+    { id: 1, data: "Bench Press • 4x8 • 100kg" },
+    { id: 2, data: "Squat • 5x5 • 140kg" },
+    { id: 3, data: "Deadlift • 3x5 • 160kg" }
   ]);
 
   useEffect(() => {
@@ -60,8 +60,8 @@ function DiagnosticShuffler() {
   return (
     <div className="feature-card bg-primary border border-white/5 rounded-[2rem] p-8 shadow-2xl flex flex-col items-center justify-between relative overflow-hidden group h-[400px]">
       <div className="w-full text-left mb-8 z-10">
-        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Sessões de Treino</h3>
-        <p className="font-sans text-textDark/80">Seu diário de treino implacável.</p>
+        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Training Sessions</h3>
+        <p className="font-sans text-textDark/80">Your relentless training log.</p>
       </div>
       
       <div className="relative w-full h-48 flex items-center justify-center">
@@ -88,7 +88,7 @@ function DiagnosticShuffler() {
 
 function TelemetryTypewriter() {
   const [text, setText] = useState("");
-  const fullText = "NOVO RM: 100KG => 105KG (+5%). VOLUME OTIMIZADO.";
+  const fullText = "NEW 1RM: 100KG => 105KG (+5%). VOLUME OPTIMIZED.";
 
   useEffect(() => {
     let current = "";
@@ -108,8 +108,8 @@ function TelemetryTypewriter() {
   return (
     <div className="feature-card bg-primary border border-white/5 rounded-[2rem] p-8 shadow-2xl flex flex-col group h-[400px]">
        <div className="w-full text-left mb-6">
-        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Sobrecarga Progressiva</h3>
-        <p className="font-sans text-textDark/80">Evolução documentada em tempo real.</p>
+        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Progressive Overload</h3>
+        <p className="font-sans text-textDark/80">Evolution documented in real-time.</p>
       </div>
 
       <div className="mt-auto bg-background rounded-xl p-4 border border-white/10 font-mono text-sm text-textMain h-32 relative">
@@ -148,8 +148,8 @@ function CursorScheduler() {
   return (
     <div ref={containerRef} className="feature-card bg-primary border border-white/5 rounded-[2rem] p-8 shadow-2xl flex flex-col group h-[400px] relative overflow-hidden">
       <div className="w-full text-left mb-auto">
-        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Monitoramento de Dieta</h3>
-        <p className="font-sans text-textDark/80">Controle absoluto dos seus macronutrientes.</p>
+        <h3 className="font-sans font-bold text-2xl text-textMain mb-2">Diet Monitoring</h3>
+        <p className="font-sans text-textDark/80">Absolute control of your macronutrients.</p>
       </div>
 
       <div className="relative mt-8 bg-background p-4 rounded-xl border border-white/10">
