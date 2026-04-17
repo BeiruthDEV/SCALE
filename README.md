@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/BeiruthDEV/IronLog/main/public/vite.svg" alt="SCALE Logo" width="100"/>
+  <img src="https://raw.githubusercontent.com/BeiruthDEV/SCALE/main/public/vite.svg" alt="SCALE Logo" width="100"/>
 
   # SCALE: Siga seu Instinto, Domine o Aço
 
@@ -34,7 +34,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado no seu sistema.
 
 1. Clone o repositório
    ```bash
-   git clone https://github.com/BeiruthDEV/IronLog.git
+   git clone https://github.com/BeiruthDEV/SCALE.git
    ```
 2. Entre no diretório do projeto
    ```bash
@@ -114,4 +114,4 @@ Distribuído sob a licença MIT. Veja a raiz do arquivo `LICENSE` para maiores e
 
 **BeiruthDEV** - [GitHub Profile](https://github.com/BeiruthDEV)
 
-Link do Projeto Repositório: [https://github.com/BeiruthDEV/IronLog](https://github.com/BeiruthDEV/IronLog)
+Link do Projeto Repositório: [https://github.com/BeiruthDEV/SCALE](https://github.com/BeiruthDEV/SCALE)

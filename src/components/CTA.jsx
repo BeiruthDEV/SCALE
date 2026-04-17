@@ -12,7 +12,7 @@ export default function CTA() {
         </p>
 
         <a 
-          href="https://github.com/BeiruthDEV/IronLog" 
+          href="https://github.com/BeiruthDEV/SCALE" 
           target="_blank" 
           rel="noopener noreferrer"
           className="relative overflow-hidden group bg-accent text-background text-2xl font-bold py-6 px-16 rounded-[3rem] hover:scale-[1.03] transition-transform duration-300 mt-12 shadow-[0_0_60px_-15px_#F97316]" 

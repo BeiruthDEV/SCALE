@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4">
           <h4 className="font-sans font-bold text-textMain uppercase text-sm tracking-wider mb-2">System</h4>
-          <a href="https://github.com/BeiruthDEV/IronLog" target="_blank" rel="noopener" className="font-sans text-sm hover:text-textMain transition-colors">GitHub Repository</a>
+          <a href="https://github.com/BeiruthDEV/SCALE" target="_blank" rel="noopener" className="font-sans text-sm hover:text-textMain transition-colors">GitHub Repository</a>
           <a href="#" className="font-sans text-sm hover:text-textMain transition-colors">Releases</a>
           <a href="#" className="font-sans text-sm hover:text-textMain transition-colors">License</a>
         </div>
