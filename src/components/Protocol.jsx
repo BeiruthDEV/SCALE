@@ -92,7 +92,7 @@ export default function Protocol() {
 
       <ProtocolCard 
         number="02" 
-        title="SYNTHETIC DIET" 
+        title="DIET CONTROL" 
         desc="Don't just lift weights. Master your metabolic window with precise macro and calorie tracking."
         tags={["Protein", "Carbs", "Fats"]}
         status="SYNC"
