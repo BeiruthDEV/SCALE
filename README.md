@@ -8,110 +8,98 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC.svg?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
   [![GSAP](https://img.shields.io/badge/GSAP-3.12-88CE02.svg?style=flat)](https://gsap.com/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 </div>
 
-## 📌 Brief Description
+---
 
-**SCALE** is a high-fidelity cinematic landing page built to promote the workout tracking application of the same name. The project utilizes a "Brutalist Fitness" (Dark Void + Flame Orange) aesthetic, emphasizing telemetry, information density, and cutting-edge micro-interactions to attract athletes and enthusiasts seeking structured progressive overload.
+## About
 
-## 🚀 Key Features
+**SCALE** is a workout and nutrition tracking app for athletes and fitness enthusiasts focused on structured progressive overload. This repository is the cinematic landing page built to promote it.
 
-*   **Brutalist Editorial Design System:** Dense dark theme with flame orange (`#F97316`) accent palette, uppercase typography, and a navigation interface with translucent borders.
-*   **Asynchronous Animations (GSAP):** Complex scroll-triggered animations (`ScrollTrigger`), staggered entry opacity effects, and magnetic interactions.
-*   **Mocked UI Protocols:** Components that visually mimic the final application interface through *Sticky Stacking* to ensure depth.
-*   **Global Texture and Noise:** Implementation of native SVG noise and linear grid-like gradients to replicate industrial tracking panels.
-*   **Optimized Performance (Vite + React):** Fast web bundler that delivers the site rendered in fractions of a second.
+The landing page was developed as part of my undergraduate thesis (TCC) in Software Engineering, with emphasis on advanced frontend engineering: scroll-driven animations, a custom design system, and high-fidelity UI mockups that mirror the app's interface.
 
-## ⚙️ Prerequisites and Installation
+> 🏗️ The SCALE app (backend + mobile) is currently in development.
 
-Follow the instructions below to run the project on your local machine for development and testing.
+---
 
-### Initial Dependencies
-Ensure you have [Node.js](https://nodejs.org/) installed on your system.
+## Screenshots
 
-### Installation
+<!-- Add screenshots of the landing page here -->
+![Hero Section](assets/hero.png)
+![Features Section](assets/features.png)
+![Protocol Section](assets/protocol.png)
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/BeiruthDEV/SCALE.git
-   ```
-2. Enter the project directory
-   ```bash
-   cd SCALE
-   ```
-3. Install dependencies via NPM
-   ```bash
-   npm install
-   ```
+---
 
-## 💻 How to Use
+## Key Features
 
-To start the development server and view the interactive site in your browser in real-time:
+- **Brutalist Design System** — Dense dark theme with flame orange (`#F97316`) accent palette, uppercase typography, and navigation with translucent borders
+- **GSAP Animations** — Scroll-triggered animations via `ScrollTrigger`, staggered entry effects, and magnetic interactions on interactive elements
+- **Sticky Stacking UI** — Components that visually mimic the final app interface with depth through sticky scroll layering
+- **SVG Noise & Texture** — Native SVG noise and linear grid gradients replicating industrial tracking panels
+- **Optimized Performance** — Vite build delivers sub-second rendering with Hot Module Replacement in development
 
-```bash
-# Starts the Vite server on port 5173
-npm run dev
-```
+---
 
-Open your browser at `http://localhost:5173`. Any changes to the source code (`.jsx` or `.css`) will automatically reflect on the screen (*Hot Module Replacement*).
+## Tech Stack
 
-To build the project for production:
+| Tool | Version | Role |
+|------|---------|------|
+| [React](https://react.dev/) | 19.0.0 | Component-based UI |
+| [Vite](https://vitejs.dev/) | 6.2.0 | Build tool & dev server |
+| [Tailwind CSS](https://tailwindcss.com/) | 4.0 | Utility-first styling |
+| [GSAP + ScrollTrigger](https://gsap.com/) | 3.12 | Scroll-driven animations |
+| [Lucide React](https://lucide.dev/) | — | Icon library |
+
+---
+
+## Installation
 
 ```bash
-# Bundles and minifies files into the /dist folder
-npm run build
+git clone https://github.com/BeiruthDEV/SCALE.git
+cd SCALE
+npm install
+npm run dev       # http://localhost:5173
 ```
 
-## 📁 Project Structure
+To build for production:
 
-Below is an overview of the main source code organization:
+```bash
+npm run build     # output → /dist
+```
+
+---
+
+## Project Structure
 
 ```text
 SCALE/
-├── public/                 # Public assets and meta-flags
+├── public/                 # Static assets and meta files
 ├── src/
-│   ├── components/         # Modular visual blocks of the application
-│   │   ├── Features.jsx    # "App Features", micro-UI interactions
-│   │   ├── Footer.jsx      # Call-to-action operative footer
-│   │   ├── Header.jsx      # Navigation Bar with Blur/Magnetic effects
-│   │   ├── Hero.jsx        # Main Cinematic Cover
-│   │   ├── Philosophy.jsx  # Parallax Manifesto
-│   │   └── Protocol.jsx    # UI Screens with GSAP Sticky Stacking
-│   ├── App.jsx             # Main structure and component mounting
-│   ├── index.css           # Global Tailwind styles and custom frames
-│   └── main.jsx            # Central React entry point -> DOM
-├── package.json            # CLI Scripts and dependency registry
-├── tailwind.config.js      # Palette integrations and CSS tokens
-└── vite.config.js          # Vite build tool configurations
+│   ├── components/
+│   │   ├── Hero.jsx        # Main cinematic cover section
+│   │   ├── Header.jsx      # Navigation with blur + magnetic effects
+│   │   ├── Features.jsx    # App features with micro-UI interactions
+│   │   ├── Protocol.jsx    # GSAP Sticky Stacking UI screens
+│   │   ├── Philosophy.jsx  # Parallax manifesto section
+│   │   └── Footer.jsx      # CTA footer
+│   ├── App.jsx
+│   ├── index.css           # Global Tailwind styles + custom keyframes
+│   └── main.jsx
+├── tailwind.config.js      # Design tokens and palette
+└── vite.config.js
 ```
 
-## 🛠️ Built With
+---
 
-The foundation of the application and interface uses the following technical stack:
+## License
 
-*   **[React 19](https://react.dev/):** Library for dynamic component-based interfaces.
-*   **[Vite](https://vitejs.dev/):** Next-generation optimizing fast web build tool.
-*   **[Tailwind CSS v4](https://tailwindcss.com/):** Utility-first CSS framework for lightning-fast prototyping.
-*   **[GSAP](https://gsap.com/):** The industry standard for animations and visual manipulations in JavaScript.
-*   **[Lucide React](https://lucide.dev/):** Modern vector library for clean iconography.
+MIT — free to use for study and portfolio purposes.
 
-## 🤝 Contributing
+---
 
-Contributions make the open-source community an amazing place for technical evolution. Any structural suggestions and bug reports are welcome!
+<div align="center">
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingNewFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingNewFeature`)
-5. Open a Pull Request
+**[BeiruthDEV](https://github.com/BeiruthDEV)** · [LinkedIn](https://www.linkedin.com/in/matheusbeiruth)
 
-## 📝 License
-
-Distributed under the MIT License. See the `LICENSE` file in the root for more detailed information.
-
-## ✉️ Author / Contact
-
-**BeiruthDEV** - [GitHub Profile](https://github.com/BeiruthDEV)
-
-Project Repository Link: [https://github.com/BeiruthDEV/SCALE](https://github.com/BeiruthDEV/SCALE)
+</div>
